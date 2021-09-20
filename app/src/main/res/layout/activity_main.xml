@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".MainActivity"
+    android:background="@drawable/ic_layout_belakang_01">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        >
+        <EditText
+            android:id="@+id/input_judul"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="@drawable/et_judul_text"
+            android:hint="Judul File"
+            android:textAlignment="center"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="@dimen/tiny_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="10"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/et_judul_text">
+        <EditText
+            android:id="@+id/input_text"
+            android:hint="Isi File"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@color/white"
+            android:gravity="top|start"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="@dimen/tiny_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/button_new"
+            android:layout_width="112dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15px"
+            android:backgroundTint="@color/biru"
+            android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"
+            android:text="@string/file_new" />
+
+        <Button
+            android:id="@+id/button_open"
+            android:layout_width="108dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/biru"
+            android:drawableLeft="@drawable/ic_baseline_folder_open_24"
+            android:text="@string/file_open" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="117dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15px"
+            android:backgroundTint="@color/hijau"
+            android:drawableLeft="@drawable/ic_baseline_save_24"
+            android:text="@string/file_save" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tugas Read Write File</string>
+    <string name="file_new">File New</string>
+    <string name="file_open">File Open</string>
+    <string name="file_save">File Save</string>
+    <dimen name="tiny_margin">8dp</dimen>
+</resources>
